@@ -1,15 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Navbar } from './components/navbar.jsx'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MyNavbar from './components/navbar.jsx';
+import Shop from "./pages/home/shop.jsx";
+import Cart from "./pages/cart/cart.jsx";
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" />
-          <Route path="/cart" />
-        </Routes>
+        <MyNavbar />
+        <div className="container-fluid">
+          <Routes>
+            <Route path="/" element={<Shop />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </div>
       </Router>
     </>
   )
