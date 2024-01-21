@@ -8,7 +8,7 @@ import Footer from "./components/footer.jsx";
 function App() {
   return (
     <>
-      {/* <ShopContextProvider> */}
+      {/* <ShopContext.Provider> */}
         <Router>
           <MyNavbar />
           <div className="container-md">
@@ -19,7 +19,7 @@ function App() {
           </div>
           <Footer />
         </Router>
-      {/* </ShopContextProvider> */}
+      {/* </ShopContext.Provider> */}
     </>
   )
 }

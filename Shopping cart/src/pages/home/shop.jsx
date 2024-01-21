@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-// import { ShopContext } from "../../context/shop-content.jsx";
+// import { ShopContext } from "../../context/shop-context.jsx";
 
 export default function Shop() {
     async function fakeStoreAPI() {
